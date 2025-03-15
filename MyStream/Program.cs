@@ -22,13 +22,6 @@ using FileStream outputStream = new FileStream(outputPath, FileMode.Create, File
 
 // Console.WriteLine("Done");
 
-/****************************************************
- * 有 pipeline 效果，但不直覺、不好看
- ****************************************************/
-// HexStreamTransformerVerifyChecksum transformer1 = new HexStreamTransformerVerifyChecksum(inputStream, 64, expectedChecksum);
-// await transformer1.PipeTo(outputStream, (stream) => new HexStreamTransformerPureHex(stream, 64));
-
-// Console.WriteLine("Done");
 
 /****************************************************
  * 第二種寫法，有 pipeline 效果，且比較直覺、好看
